@@ -1,0 +1,36 @@
+{
+    "autos": [
+      {
+        "id": "001",
+        "marca": "Ford",
+        "modelo": "Mustang",
+        "año": 2023,
+        "color": "rojo",
+        "tipo_motor": "V8",
+        "cilindrada": 5.0,
+        "potencia": 450,
+        "transmision": [
+	        {
+	          "tipo": "manual",
+	          "velocidades": 6
+	        }
+        ]
+      },
+      {
+        "id": "002",
+        "marca": "Chevrolet",
+        "modelo": "Camaro",
+        "año": 2024,
+        "color": "azul",
+        "tipo_motor": "V6",
+        "cilindrada": 3.6,
+        "potencia": 335,
+        "transmision": [
+			{
+          "tipo": "automática",
+          "velocidades": 10
+         	}
+        ]
+      }
+    ]
+  }

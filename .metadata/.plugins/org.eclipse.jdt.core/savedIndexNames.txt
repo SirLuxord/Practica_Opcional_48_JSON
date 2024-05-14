@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\Haendel\OneDrive\Escritorio\Tarea opcional eclipse -48\Practica opcional 48\.metadata\.plugins\org.eclipse.jdt.core
+3413270776.index
+2613055425.index
+2548564570.index
+1865797976.index

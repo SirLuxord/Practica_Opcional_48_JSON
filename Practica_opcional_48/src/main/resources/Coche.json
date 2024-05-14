@@ -1,0 +1,14 @@
+{
+	"id": "001",
+	"marca": "Ford",
+	"modelo": "Mustang",
+	"año": 2023,
+	"color": "rojo",
+	"tipo_motor": "V8",
+	"cilindrada": 5.0,
+	"potencia": 450,
+	"transmision": {
+	  "tipo": "manual",
+	  "velocidades": 6
+	}
+}
