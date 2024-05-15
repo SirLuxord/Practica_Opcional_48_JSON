@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import main.Main;
 
 public class Transmision {
-	private static Scanner scanner = new Scanner(System.in);
 	private String tipo;
 	private Integer velocidades;
 	public Transmision(){;
@@ -21,8 +21,6 @@ public class Transmision {
 		if (numero == 1) {
 			this.tipo = crearTipo();
 	        this.velocidades = crearVelocidad(); 
-	        //scanner.close();
-	        //Si cierro un scanner de cualquier tipo, parece cerrar todos.
 		}
 	}
 	
@@ -58,8 +56,8 @@ public class Transmision {
 	    	for (int i = 0; i < tipostransmision.size(); i++) {
 	    		System.out.println((i+1) + ". " + tipostransmision.get(i));
 	    	}
-	    	int numero = scanner.nextInt();
-	    	scanner.nextLine();
+	    	int numero = Main.scannerauto.nextInt();
+	    	Main.scannerauto.nextLine();
 	    	String tipotransmision = tipostransmision.get(numero-1);
 	    	return tipotransmision;
 		} catch (InputMismatchException | IndexOutOfBoundsException e) {
@@ -71,11 +69,12 @@ public class Transmision {
 	public Integer crearVelocidad() {
 			try {
             System.out.println("Elige la velocidad de la transmision que desees");
-            int velocidad = scanner.nextInt();
-            scanner.nextLine();
+            int velocidad = Main.scannerauto.nextInt();
+            Main.scannerauto.nextLine();
             return velocidad;
         } catch (InputMismatchException e) {
             System.out.println("Debes usar números enteros");
+            Main.scannerauto.nextLine();
             return crearVelocidad();}
 	}
 }

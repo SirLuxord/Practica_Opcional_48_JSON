@@ -1,10 +1,9 @@
 package coches;
 
 import java.util.InputMismatchException;
-import java.util.Scanner;
+import main.Main;
 
 public class Auto {
-	private static Scanner scannerauto = new Scanner(System.in);
 	private String id;
 	private String marca;
 	private String modelo;
@@ -111,44 +110,44 @@ public class Auto {
 	
 	public void crearMarca() {
 		System.out.println("De que marca es el auto");
-		this.marca = scannerauto.nextLine();
+		this.marca = Main.scannerauto.nextLine();
 	}
 	
 	public void crearModelo() {
         System.out.println("Que modelo es el auto");
-        this.modelo = scannerauto.nextLine();
+        this.modelo = Main.scannerauto.nextLine();
     }
 	
 	public void crearAño() {
 		try {
 		System.out.println("De que año es el auto");
-        this.año = scannerauto.nextInt();
-        scannerauto.nextLine();
+        this.año = Main.scannerauto.nextInt();
+        Main.scannerauto.nextLine();
 		} catch (InputMismatchException e) {
 			System.out.println("Debe introducir un numero");
-            scannerauto.nextLine();
+			Main.scannerauto.nextLine();
             this.crearAño();
 		};
 	}
 
 	public void crearColor() {
         System.out.println("De que color es el auto");
-        this.color = scannerauto.nextLine();
+        this.color = Main.scannerauto.nextLine();
     }
 	
 	public void crearTipo_motor() {
 		System.out.println("Que tipo de motor tiene el auto");
-        this.tipo_motor = scannerauto.nextLine();;
+        this.tipo_motor = Main.scannerauto.nextLine();;
 	}
 	
 	public void crearCilindrada() {
 		System.out.println("De que tipo de cilindrada es el auto");
-        this.cilindrada = scannerauto.nextLine();;
+        this.cilindrada = Main.scannerauto.nextLine();;
 	}
 	
 	public void crearPotencia() {
 		System.out.println("Que potencia tiene el auto");
-        this.potencia = scannerauto.nextLine();;
+        this.potencia = Main.scannerauto.nextLine();;
 	}
 	
 	public void imprimirAuto() {
